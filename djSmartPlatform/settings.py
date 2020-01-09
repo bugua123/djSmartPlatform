@@ -83,28 +83,28 @@ WSGI_APPLICATION = 'djSmartPlatform.wsgi.application'
 # }
 
 #mysql 数据库
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.mysql',
-#         'NAME': 'demo',
-#         'USER':'root',
-#         'PASSWORD':'123456',
-#         'HOST':'127.0.0.1',
-#         'PORT':'3306',
-#     }
-# }
-
-#postgresql 数据库
 DATABASES = {
-    'default':{
-        'ENGINE':'django.db.backends.postgresql_psycopg2',
-        'NAME':'demo',#数据库名字
-        'USER':'wzw',#登录用户名
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'demo',
+        'USER':'root',
         'PASSWORD':'123456',
-        'HOST':'127.0.0.1',#数据库IP地址
-        'PORT':'5432',
+        'HOST':'127.0.0.1',
+        'PORT':'3306',
     }
 }
+
+# #postgresql 数据库
+# DATABASES = {
+#     'default':{
+#         'ENGINE':'django.db.backends.postgresql_psycopg2',
+#         'NAME':'demo',#数据库名字
+#         'USER':'wzw',#登录用户名
+#         'PASSWORD':'123456',
+#         'HOST':'127.0.0.1',#数据库IP地址
+#         'PORT':'5432',
+#     }
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/2.1/ref/settings/#auth-password-validators
