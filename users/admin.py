@@ -1,14 +1,9 @@
 from django.contrib import admin
 
 # Register your models here.
-from users.models import AboutMe, Ziyu
+from users.models import UserInfo,UserToken
 
+@admin.register(UserInfo)
+class UserInfoAdmin(admin.ModelAdmin):
+    list_display = ('username',)
 
-@admin.register(AboutMe)
-class MessageAdmin(admin.ModelAdmin):
-    list_display = ('summary',)
-
-
-@admin.register(Ziyu)
-class ZiyuAdmin(admin.ModelAdmin):
-    list_display = ('create_at', 'content')
