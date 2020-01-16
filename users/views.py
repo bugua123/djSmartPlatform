@@ -26,13 +26,13 @@ class AuthView(View):
     def get(self, request, *args, **kwargs):
         ret = {'code': 1000, 'msg': 'success', 'name': 'test'}
         ret = json.dumps(ret, ensure_ascii=False)
-        return render(request, 'index.html')
+        return render(request, 'users/register.html')
         # return HttpResponse(ret)
 
     def post(self, request, *args, **kwargs):
         ret = {'code': 1000, 'msg': None}
-        try:
 
+        try:
             user = request.POST.get('username')
             pwd = request.POST.get('password')
             print(user)
