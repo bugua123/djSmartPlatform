@@ -125,6 +125,18 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+REST_FRAMEWORK = {
+    # Use Django's standard `django.contrib.auth` permissions,
+    # or allow read-only access for unauthenticated users.
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
+    ],
+    "DEFAULT_VERSION": 'v1',  # 默认版本
+    "ALLOWED_VERSIONS": ['v1', 'v2'],  # 允许版本
+    "VERSION_PARAM": 'version',  # 版本参数例如  ?version=v1,，则表示版本为v1
+}
+
+
 
 # Internationalization
 # https://docs.djangoproject.com/en/2.1/topics/i18n/
