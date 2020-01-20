@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'users',
-    'rest_framework'
+    'djadmin'
+    # 'rest_framework'
 ]
 
 MIDDLEWARE = [
@@ -100,7 +101,7 @@ DATABASES = {
 #     'default':{
 #         'ENGINE':'django.db.backends.postgresql_psycopg2',
 #         'NAME':'demo',#数据库名字
-#         'USER':'wzw',#登录用户名
+#         'USER':'root',#登录用户名
 #         'PASSWORD':'123456',
 #         'HOST':'127.0.0.1',#数据库IP地址
 #         'PORT':'5432',

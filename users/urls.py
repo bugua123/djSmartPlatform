@@ -7,5 +7,5 @@ from users.views import AuthView
 app_name = 'users'
 
 urlpatterns = [
-    path('api/v1/auth/', AuthView.as_view()),
+    #path('api/v1/auth/', AuthView.as_view()),
 ]
